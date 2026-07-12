@@ -1,0 +1,16 @@
+
+import java.util.HashMap;
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        HashMap<Integer, Integer> freq = new HashMap<>();
+        for(int num : nums){
+            freq.put(num,0);            
+        }
+        for(int num : nums){
+            freq.put(num,freq.get(num) + 1);
+            if(freq.get(num)>1) return true;
+        }
+        return false;
+
+    }
+}
