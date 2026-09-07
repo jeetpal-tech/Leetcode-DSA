@@ -14,7 +14,8 @@ class Solution {
                 j--;
             }
         }
-        return new int[]{0,0}; 
+        return null;
+        //return new int[]{0,0}; 
         //return new int[]{-1,-1};
     }
     
